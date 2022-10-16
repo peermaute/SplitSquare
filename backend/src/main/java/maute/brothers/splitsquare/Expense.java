@@ -23,13 +23,9 @@ public class Expense {
 
     @Override
     public boolean equals(Object obj){
-        if(obj == null || obj instanceof Expense == false){
+        if(!(obj instanceof Expense expense)){
             return false;
         }
-        Expense expense = (Expense) obj;
-        if(expense.getId().equals(this.id)){
-            return true;
-        }
-        return false;
+        return expense.getId().equals(this.id);
     }
 }
