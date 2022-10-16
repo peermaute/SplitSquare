@@ -19,9 +19,6 @@ permissions:
 jobs:
   build:
     runs-on: windows-latest
-    defaults:
-      run:
-        working-directory: backend/
 
     steps:
       - uses: actions/checkout@v3
@@ -37,4 +34,5 @@ jobs:
         uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
         with:
           arguments: build
+          build-root-directory: backend/
         
