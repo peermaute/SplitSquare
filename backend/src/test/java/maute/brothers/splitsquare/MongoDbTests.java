@@ -1,5 +1,7 @@
 package maute.brothers.splitsquare;
 
+import maute.brothers.splitsquare.expenses.Expense;
+import maute.brothers.splitsquare.expenses.ExpenseRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

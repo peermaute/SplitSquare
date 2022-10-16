@@ -1,4 +1,4 @@
-package maute.brothers.splitsquare;
+package maute.brothers.splitsquare.users;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -17,4 +17,11 @@ public class User {
 
     private String firstName;
 
+    @Override
+    public boolean equals(Object obj){
+        if(!(obj instanceof User user)){
+            return false;
+        }
+        return user.getId().equals(this.id);
+    }
 }

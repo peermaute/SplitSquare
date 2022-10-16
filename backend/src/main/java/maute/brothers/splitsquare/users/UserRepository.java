@@ -1,4 +1,4 @@
-package maute.brothers.splitsquare;
+package maute.brothers.splitsquare.users;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;

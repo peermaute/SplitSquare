@@ -1,7 +1,8 @@
-package maute.brothers.splitsquare;
+package maute.brothers.splitsquare.expenses;
 
 import lombok.Getter;
 import lombok.Setter;
+import maute.brothers.splitsquare.users.User;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
