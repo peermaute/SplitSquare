@@ -29,7 +29,7 @@ jobs:
           distribution: 'temurin'
       - name: Build with Gradle
         env:
-          SPLIT_SQUARE_MONGO_URI: ${{ secrets.SPLIT_SQUARE_MONGO_URI }}
+          SQUARE_APPLICATIONS_MONGO_URI: ${{ secrets.SQUARE_APPLICATIONS_MONGO_URI }}
           SPLIT_SQUARE_DATA_BASE_NAME: ${{ secrets.SPLIT_SQUARE_DATA_BASE_NAME }}
         uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
         with:
