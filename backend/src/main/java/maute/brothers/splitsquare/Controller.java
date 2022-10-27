@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.security.Principal;
+
 /**
  * This controller creates a REST API to access the SplitSquare database.
  */
@@ -39,6 +41,11 @@ public class Controller {
         catch(Exception e){
             return new ResponseEntity<>("GET Request failed:\n" + e, HttpStatus.BAD_REQUEST);
         }
+    }
+
+    @GetMapping(path = "/test")
+    public String test(Principal principal) {
+        return principal.getName();
     }
 
 }

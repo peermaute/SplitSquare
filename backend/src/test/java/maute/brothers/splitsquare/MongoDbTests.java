@@ -2,6 +2,8 @@ package maute.brothers.splitsquare;
 
 import maute.brothers.splitsquare.expenses.Expense;
 import maute.brothers.splitsquare.expenses.ExpenseRepository;
+import maute.brothers.splitsquare.users.AdminUser;
+import maute.brothers.splitsquare.users.AdminUserRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -21,4 +23,5 @@ public class MongoDbTests {
         assertTrue(expenseRepository.findById(expense.getId()).isPresent());
         expenseRepository.delete(expense);
     }
+
 }
